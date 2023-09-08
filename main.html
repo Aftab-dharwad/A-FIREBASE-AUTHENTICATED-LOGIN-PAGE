@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login-page </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Welcome Back.</h1>
+		<p>Pinterest is an American image sharing and social media service designed to enable saving and discovery of information.</p>
+		<span>
+			<p>login with social media</p>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Login with Facebook</a>
+			<a href="#"><i class="fa fa-twitter" arsia-hidden="true"></i> Login with Twitter </a>
+			<a href="#"><i class="fa fa-Google+" aria-hidden="true"></i>Login with Google+</a>
+		</span>
+		</div>
+	</div>
+      
+    
+		<div class="right">
+            
+	    <div class="logo">
+            <img src="https://static-00.iconduck.com/assets.00/pinterest-icon-2048x2048-os3lysf9.png" alt="logo" style="position:relative;width:80px ;height: 80px;margin-left:  40px;right: 40px;">
+        
+	<h4>Welcome to Pinterest</h4>
+		<h5>Login</h5>
+		<p style="color: black;">Don't have an account? <a href="#">Create Your Account</a> it takes less than a minute</p>
+		<div class="input">
+
+          
+                <input  id="email" placeholder="Email-id" type="text"></input>
+				<input type="password" id="password" placeholder="Password"  type="text" visibility="hidden"></input>
+ 
+			
+		</div>
+			
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+				<!-- Angular -->
+				<label>
+					<input type="checkbox" name="item" checked/>
+					<span class="text-checkbox">Remember me</span>
+				</label>
+						<p style="color: black;">forget password?</p>
+						
+
+			</div>
+			
+
+						<br>
+						<button  onclick="login()" id="btn">log-in</button>
+                        <button  onclick="register()" id="btn">Sign-up</button><br>
+						
+				
+				</div>
+				<p style="font-size: smaller; padding-top: 15px; padding-bottom: 10px; text-align: center; color: black;">By Signing In You Agree To Our <a href="#">Terms</a></p>
+					
+				
+				
+			</div>
+			
+			
+
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<!-- Our script must be loaded after firebase references -->
+<script src="main.js"></script>
+	</div>
+		</div>
+</div>
+ 
+
+  
+</body>
+</html>
